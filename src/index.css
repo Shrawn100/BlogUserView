@@ -122,6 +122,7 @@ code {
 .blog-title {
   padding: 50px 0px 5px 0px;
   margin: 0;
+  font-family: "Acme";
 }
 .blog-author {
   font-size: 18px;
