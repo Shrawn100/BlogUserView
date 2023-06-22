@@ -77,7 +77,8 @@ code {
 /*Visits section */
 .front-page-visits {
   margin-top: 50px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
   padding: 50px;
   padding-bottom: 70px;
@@ -87,12 +88,12 @@ code {
 .blog-two-visit-cell,
 .blog-three-visit-cell {
   display: flex;
-  height: 100%;
+
   flex-direction: column;
   justify-content: center;
   color: black;
   text-decoration: none;
-  margin-top: 50px;
+
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
@@ -108,6 +109,8 @@ code {
 .front-page-blogtwo-img,
 .front-page-blogthree-img {
   width: 100%;
+  max-height: 600px;
+  object-fit: cover;
 }
 .frontpage-blog-info-container {
   padding: 20px 20px 30px 20px;
@@ -153,7 +156,8 @@ code {
 }
 @media (max-width: 1000px) {
   .front-page-visits {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
   }
   .blog-one-visit-cell,
@@ -307,9 +311,9 @@ code {
   transform: scale(0.99);
 }
 .article-image {
+  object-fit: cover;
   width: 100%;
-
-  max-width: 300px;
+  max-height: 250px;
 }
 .blog-info {
   padding: 20px;
@@ -324,6 +328,11 @@ code {
   font-family: "Acme";
   width: 100%;
 }
+.blog-info-date {
+  color: black;
+  padding-top: 15px;
+  font-weight: bold;
+}
 
 @media (max-width: 800px) {
   .blog-article-container {
@@ -334,8 +343,10 @@ code {
   }
   .article-image {
     width: 100%;
-
+    max-height: 400px;
     max-width: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   .blog-info {
     box-sizing: border-box;

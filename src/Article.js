@@ -49,7 +49,9 @@ function Article() {
                   <h1 className="blog-info-heading">{data.title}</h1>
                   <p>{data.desc}</p>
                   <h2>{data.author.name}</h2>
-                  <p>Published on: {formatDate(data.date)}</p>
+                  <p className="blog-info-date">
+                    Published on: {formatDate(data.date)}
+                  </p>
                 </div>
               </Link>
             ))}
