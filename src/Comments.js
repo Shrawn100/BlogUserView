@@ -83,10 +83,12 @@ function Comments({ blog, comments, setNewComment, newComment }) {
           ) : (
             <ul className="comments-list">
               {allComments.map((comment) => (
-                <li key={comment.id}>
+                <li className="comment-list-item" key={comment.id}>
                   <h3>{comment.name}</h3>
-                  <p>{comment.content}</p>
-                  <p>{formatDate(comment.date)}</p>
+                  <p className="comment-list-item-content">{comment.content}</p>
+                  <p className="comment-list-item-date">
+                    Date: {formatDate(comment.date)}
+                  </p>
                 </li>
               ))}
             </ul>
@@ -102,10 +104,12 @@ function Comments({ blog, comments, setNewComment, newComment }) {
           ) : (
             <ul className="comments-list">
               {comments.map((comment) => (
-                <li key={comment.id}>
+                <li className="comment-list-item" key={comment.id}>
                   <h3>{comment.name}</h3>
-                  <p>{comment.content}</p>
-                  <p>{formatDate(comment.date)}</p>
+                  <p className="comment-list-item-content">{comment.content}</p>
+                  <p className="comment-list-item-date">
+                    Date: {formatDate(comment.date)}
+                  </p>
                 </li>
               ))}
             </ul>

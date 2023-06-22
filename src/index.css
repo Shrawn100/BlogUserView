@@ -388,6 +388,7 @@ code {
   max-width: 600px;
   width: 80%;
   margin-bottom: 5px;
+  border: 1px solid grey;
   background-color: whitesmoke;
 }
 .comments-form > button {
@@ -414,11 +415,19 @@ code {
   align-self: flex-start;
   box-sizing: border-box;
 }
-.comments-list > li {
+.comment-list-item {
   margin-top: 20px;
   width: 80%;
   border-bottom: 1px solid black;
 }
+
+.comment-list-item-content {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-family: "Indie Flower", "Roboto Flex";
+}
+
 .comments-container {
   display: flex;
   flex-direction: column;
