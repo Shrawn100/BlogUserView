@@ -36,7 +36,7 @@ function Comments({ blog, comments, setNewComment, newComment }) {
   };
 
   return (
-    <>
+    <div className="comments-section-container">
       <h2 className="comments-heading">Leave a Comment!</h2>
       <p className="comments-success">{successMsg}</p>
       <form onSubmit={handleSubmit} className="comments-form">
@@ -112,7 +112,7 @@ function Comments({ blog, comments, setNewComment, newComment }) {
           )}
         </div>
       )}
-    </>
+    </div>
   );
 }
 
