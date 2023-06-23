@@ -10,7 +10,7 @@ function Comments({ blog, comments, setNewComment, newComment }) {
 
   const handleLoad = async (e) => {
     const response = await axios.get(
-      `http://localhost:3000/article/${blog}/all-comments`
+      `https://blogapi-production-9a30.up.railway.app/article/${blog}/all-comments`
     );
     setAllComments(response.data.comments);
     setAllStatus(true);
@@ -21,10 +21,13 @@ function Comments({ blog, comments, setNewComment, newComment }) {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post(`http://localhost:3000/article/${blog}/comment`, {
-      name: name,
-      content: message,
-    });
+    await axios.post(
+      `https://blogapi-production-9a30.up.railway.app/article/${blog}/comment`,
+      {
+        name: name,
+        content: message,
+      }
+    );
     setSuccessMsg("Comment sent successfully");
     setName("");
     setMessage("");

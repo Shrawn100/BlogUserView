@@ -9,7 +9,9 @@ function Article() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/articles");
+        const response = await axios.get(
+          "https://blogapi-production-9a30.up.railway.app/articles"
+        );
         console.log(response.data);
         setResponseData(response.data);
       } catch (error) {

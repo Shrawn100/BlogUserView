@@ -22,7 +22,9 @@ function Blog() {
   const [successMsg, setSuccessMsg] = useState("");
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get(`http://localhost:3000/article/${id}`);
+      const response = await axios.get(
+        `https://blogapi-production-9a30.up.railway.app/article/${id}`
+      );
       setResponseData(response.data);
 
       setTitle(response.data.blog.title);

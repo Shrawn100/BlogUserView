@@ -10,13 +10,15 @@ function App() {
   const [blogThree, setBlogThree] = useState({});
 
   useEffect(() => {
-    axios.get("http://localhost:3000/frontpage").then((response) => {
-      console.log(response.data);
-      setResponse(response.data);
-      setBlogOne(response.data[0]);
-      setBlogTwo(response.data[1]);
-      setBlogThree(response.data[2]);
-    });
+    axios
+      .get("https://blogapi-production-9a30.up.railway.app/frontpage")
+      .then((response) => {
+        console.log(response.data);
+        setResponse(response.data);
+        setBlogOne(response.data[0]);
+        setBlogTwo(response.data[1]);
+        setBlogThree(response.data[2]);
+      });
   }, []);
 
   console.log(blogOne.image);
