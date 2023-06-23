@@ -93,8 +93,11 @@ function App() {
           <h2 className="new-section">A Writer?</h2>
           <div className="writer-section-container">
             <p>
-              Are you a writer? Visit <a href="/author">Author blog page</a> to
-              help us create more of these wonderful blogs
+              Are you a writer? Visit the{" "}
+              <a href="https://shrawn100.github.io/BlogAuthorView">
+                author blog
+              </a>{" "}
+              website to help us create more of these wonderful blogs
             </p>
           </div>
           <footer>
