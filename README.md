@@ -42,7 +42,7 @@ Welcome to the Travel Inspiration Blog! This is a platform dedicated to providin
 * Explore the different sections of the website, such as the home page, visits section, about section, and blog view.
 * Read individual blog posts by clicking on the blog titles or images.
 * Leave comments on blog posts by filling out the comments form.
-* Connect with the author through the provided contact information or social media links in the footer.
+
 
 ## License
 This project is licensed under the **MIT License**
