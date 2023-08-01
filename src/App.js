@@ -29,7 +29,7 @@ function App() {
       {response ? (
         <div className="front-page-container">
           <div className="home-page-background">
-            <h1>Let us help you find your next getaway</h1>
+            <h1>Find Your Next Getaway</h1>
           </div>
           <h2 className="new-section">This Week's Visits</h2>
           <div className="front-page-visits">

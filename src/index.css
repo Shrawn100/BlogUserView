@@ -53,12 +53,15 @@ code {
   align-items: center;
 }
 .home-page-background > h1 {
-  font-weight: 1000;
+  font-weight: bold;
   color: white;
-  font-size: 130px;
+  font-size: 100px;
   text-align: center;
   padding: 10px;
-  font-family: "Lalita One";
+  padding-bottom: 80px;
+  font-family: "Lumanosimo";
+  text-decoration: underline;
+  transform: rotate(-1.5deg);
 }
 .new-section {
   background-color: rgb(41, 41, 41);
