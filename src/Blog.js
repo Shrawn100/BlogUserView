@@ -67,7 +67,7 @@ function Blog() {
           />
         </>
       ) : (
-        <p>loading</p>
+        <></>
       )}
     </div>
   );

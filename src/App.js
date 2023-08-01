@@ -140,7 +140,7 @@ function App() {
           </footer>
         </div>
       ) : (
-        <p>Loading...</p>
+        <></>
       )}
     </>
   );

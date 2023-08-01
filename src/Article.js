@@ -61,7 +61,7 @@ function Article() {
         </>
       ) : (
         <>
-          <p>Loading...</p>
+          <></>
         </>
       )}
     </>
