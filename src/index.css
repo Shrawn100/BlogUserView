@@ -189,7 +189,7 @@ code {
   min-height: 700px;
 }
 .about-desc {
-  font-size: 60px;
+  font-size: 50px;
   color: rgb(41, 41, 41);
   font-weight: bold;
   width: 100%;
@@ -198,23 +198,23 @@ code {
 
 @media (max-width: 1200px) {
   .about-desc {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 @media (max-width: 900px) {
   .about-desc {
-    font-size: 40px;
+    font-size: 30px;
   }
   .writer-section-container > p {
     font-size: 20px;
   }
-}
-@media (max-width: 650px) {
   .about-section {
     flex-direction: column;
   }
+}
+@media (max-width: 650px) {
   .about-desc {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 /*Writer Section */
@@ -468,9 +468,10 @@ footer {
 }
 footer > h3 {
   text-align: center;
-
+  padding: 10px;
+  margin-top: 10px;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 22px;
 }
 
 .contacts {
