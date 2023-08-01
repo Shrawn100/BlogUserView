@@ -76,12 +76,10 @@ code {
 
 /*Visits section */
 .front-page-visits {
-  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
-  padding: 50px;
-  padding-bottom: 70px;
+  padding: 70px 120px 70px 120px;
 }
 
 .blog-one-visit-cell,
@@ -114,9 +112,6 @@ code {
   padding: 20px 20px 30px 20px;
   text-align: center;
 }
-.frontpage-blog-info-container > p {
-  font-family: "Roboto Flex";
-}
 
 .frontpage-blog-info-container > button {
   margin-top: 20px;
@@ -135,14 +130,12 @@ code {
 .blog-two-heading,
 .blog-three-heading {
   font-size: 24px;
-  font-family: "Acme";
-  margin-top: 15px;
 }
 @media (max-width: 1200px) {
   .front-page-visits {
     margin-top: 20px;
-    gap: 15px;
-    padding: 20px;
+    gap: 30px;
+    padding: 50px;
     padding-bottom: 40px;
   }
 
@@ -156,7 +149,10 @@ code {
   .front-page-visits {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 50px;
+    margin: auto;
   }
   .blog-one-visit-cell,
   .blog-two-visit-cell,

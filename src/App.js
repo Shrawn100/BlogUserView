@@ -44,7 +44,7 @@ function App() {
               ></img>
               <div className="frontpage-blog-info-container">
                 <h3 className="blog-one-heading">{blogOne.title}</h3>
-                <p>{blogOne.desc}</p>
+
                 <button>Visit Here</button>
               </div>
             </Link>
@@ -60,7 +60,7 @@ function App() {
               ></img>
               <div className="frontpage-blog-info-container">
                 <h3 className="blog-two-heading">{blogTwo.title}</h3>
-                <p>{blogTwo.desc}</p>
+
                 <button>Visit Here</button>
               </div>
             </Link>
@@ -76,7 +76,7 @@ function App() {
               ></img>
               <div className="frontpage-blog-info-container">
                 <h3 className="blog-three-heading">{blogThree.title}</h3>
-                <p>{blogThree.desc}</p>
+
                 <button>Visit Here</button>
               </div>
             </Link>
