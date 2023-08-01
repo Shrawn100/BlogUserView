@@ -222,10 +222,10 @@ code {
   display: flex;
 }
 .writer-section-container > p {
-  font-size: 30px;
+  font-size: 20px;
   padding: 40px 20px 40px 20px;
   color: rgb(41, 41, 41);
-  font-weight: bold;
+
   width: 100%;
   text-align: center;
 }
@@ -461,10 +461,9 @@ code {
 /* Footer */
 
 footer {
-  border-top: 3px solid black;
   padding: 40px;
   width: 100%;
-  background-color: rgb(175, 164, 125);
+  background-color: rgb(163, 161, 153);
   box-sizing: border-box;
 }
 footer > h3 {
@@ -483,6 +482,6 @@ footer > h3 {
   padding: 10px;
 }
 .contacts > svg {
-  background-color: rgb(175, 164, 125);
+  background-color: rgb(163, 161, 153);
   color: white;
 }
