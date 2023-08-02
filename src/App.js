@@ -85,9 +85,9 @@ function App() {
           <div className="about-section">
             <div className="about-img"></div>
             <p className="about-desc">
-              Writing and travelling, two of our favourite things. Our goal is
-              to use our passion to help inspire fellow travellers to find their
-              ideal travel destinations.
+              Writing and travelling, two of our favourite things.
+              <br></br> Our goal is to use our passion to help inspire fellow
+              travellers to find their ideal travel destinations.
             </p>
           </div>
           <h2 className="new-section">A Writer?</h2>
