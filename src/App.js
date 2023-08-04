@@ -104,7 +104,18 @@ function App() {
           <Footer />
         </div>
       ) : (
-        <></>
+        <div className="loader-container">
+          <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
       )}
     </>
   );
