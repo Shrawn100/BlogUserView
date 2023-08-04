@@ -30,11 +30,11 @@ function App() {
       {response ? (
         <div className="front-page-container">
           <div className="home-page-background">
-            <div class="main">
-              <div class="d1"></div>
-              <div class="d2"></div>
-              <div class="d3"></div>
-              <div class="d4"></div>
+            <div className="main">
+              <div className="d1"></div>
+              <div className="d2"></div>
+              <div className="d3"></div>
+              <div className="d4"></div>
             </div>
             <h1>Find Your Next Getaway</h1>
           </div>
