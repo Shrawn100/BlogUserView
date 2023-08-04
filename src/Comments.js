@@ -40,10 +40,23 @@ function Comments({ blog, comments, setNewComment, newComment }) {
 
   return (
     <div className="comments-section-container">
-      <h2 className="comments-heading">Leave a Comment!</h2>
       <p className="comments-success">{successMsg}</p>
       <form onSubmit={handleSubmit} className="comments-form">
-        <label htmlFor="name">Your name:</label>
+        <label htmlFor="comment">Write a comment</label>
+        <textarea
+          placeholder="I love this article"
+          id="comment"
+          name="comment"
+          value={message}
+          onChange={(e) => {
+            setMessage(e.target.value);
+            setSuccessMsg("");
+          }}
+          rows="1"
+          cols="60"
+          required
+        ></textarea>
+        <label htmlFor="name">Your name</label>
         <input
           type="text"
           value={name}
@@ -57,21 +70,7 @@ function Comments({ blog, comments, setNewComment, newComment }) {
           placeholder="John Doe"
         ></input>
 
-        <label htmlFor="comment">Comment:</label>
-        <textarea
-          placeholder="I love this article"
-          id="comment"
-          name="comment"
-          value={message}
-          onChange={(e) => {
-            setMessage(e.target.value);
-            setSuccessMsg("");
-          }}
-          rows="5"
-          cols="60"
-          required
-        ></textarea>
-        <button onClick={handleSubmit}>Submit</button>
+        <button>Submit</button>
       </form>
 
       <h2 className="comments-heading comments-h">Comments:</h2>
