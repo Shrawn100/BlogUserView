@@ -7,7 +7,7 @@ function BlogView({ title, desc, date, imgUrl, content, alt, author }) {
     <div className="blog-container">
       <h1 className="blog-title">{title}</h1>
       <h2 className="blog-author">Written by: {author}</h2>
-      <p className="blog-date">Last edited: {formattedDate}</p>
+      <p className="blog-date">{formattedDate}</p>
       <img className="blog-image" src={imgUrl} alt={alt} />
       {content.map((paragraph, index) => (
         <p className="blog-paragraph" key={index}>

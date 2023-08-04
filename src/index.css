@@ -288,17 +288,18 @@ code {
 }
 
 .blog-title {
-  padding: 80px 0px 5px 0px;
+  padding-top: 80px;
+
   margin: 0;
-  font-family: "Acme";
 }
 .blog-author {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .blog-date {
   padding-bottom: 20px;
+  font-size: 16px;
   margin: 0;
 }
 .blog-image {
@@ -306,6 +307,7 @@ code {
   object-fit: cover;
   max-height: 600px;
   margin-bottom: 50px;
+  border-radius: 2em;
 }
 .blog-paragraph {
   margin-top: 40px;
@@ -333,7 +335,7 @@ code {
   gap: 20px;
   flex-direction: column;
   align-items: center;
-
+  background-color: rgb(233, 231, 231);
   width: 100%;
   min-height: 98vh;
 }
@@ -480,7 +482,7 @@ code {
 }
 .comment-list-item {
   padding: 20px;
-  padding-top: 30px;
+  padding-top: 30gpx;
   border-top: 2px solid rgb(252, 252, 252);
 }
 .comment-list-item > h1 {
