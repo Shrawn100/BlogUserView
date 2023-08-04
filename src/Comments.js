@@ -8,17 +8,6 @@ function Comments({ blog, comments, setNewComment, newComment }) {
   const [message, setMessage] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
 
-  const handleLoad = async (e) => {
-    const response = await axios.get(
-      `https://blogapi-production-9a30.up.railway.app/article/${blog}/all-comments`
-    );
-    setAllComments(response.data.comments);
-    setAllStatus(true);
-  };
-
-  const handleHide = () => {
-    setAllStatus(false);
-  };
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios.post(
@@ -75,48 +64,20 @@ function Comments({ blog, comments, setNewComment, newComment }) {
 
       <h2 className="comments-heading comments-h">Comments:</h2>
 
-      {allStatus ? (
-        <div className="comments-container">
-          <button className="load-btn" onClick={handleHide}>
-            Reduce comments
-          </button>
-          {allComments.length === 0 ? (
-            <p>There are no comments</p>
-          ) : (
-            <ul className="comments-list">
-              {allComments.map((comment) => (
-                <li className="comment-list-item" key={comment.id}>
-                  <h3>{comment.name}</h3>
-                  <p className="comment-list-item-content">{comment.content}</p>
-                  <p className="comment-list-item-date">
-                    Date: {formatDate(comment.date)}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
+      {comments.length === 0 ? (
+        <p>There are no comments</p>
       ) : (
-        <div className="comments-container">
-          <button className="load-btn" onClick={handleLoad}>
-            Load all comments
-          </button>
-          {comments.length === 0 ? (
-            <p>There are no comments</p>
-          ) : (
-            <ul className="comments-list">
-              {comments.map((comment) => (
-                <li className="comment-list-item" key={comment.id}>
-                  <h3>{comment.name}</h3>
-                  <p className="comment-list-item-content">{comment.content}</p>
-                  <p className="comment-list-item-date">
-                    Date: {formatDate(comment.date)}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
+        <ul className="comments-list">
+          {comments.map((comment) => (
+            <li className="comment-list-item" key={comment.id}>
+              <h3>{comment.name}</h3>
+              <p className="comment-list-item-content">{comment.content}</p>
+              <p className="comment-list-item-date">
+                {formatDate(comment.date)}
+              </p>
+            </li>
+          ))}
+        </ul>
       )}
     </div>
   );
