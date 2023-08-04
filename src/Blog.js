@@ -43,7 +43,7 @@ function Blog() {
     <div>
       <Navbar></Navbar>
       {responseData ? (
-        <>
+        <div className="blog-content-container">
           <BlogView
             date={date}
             alt={alt}
@@ -65,7 +65,7 @@ function Blog() {
             successMsg={successMsg}
             setSuccessMsg={setSuccessMsg}
           />
-        </>
+        </div>
       ) : (
         <></>
       )}
