@@ -30,6 +30,12 @@ function App() {
       {response ? (
         <div className="front-page-container">
           <div className="home-page-background">
+            <div class="main">
+              <div class="d1"></div>
+              <div class="d2"></div>
+              <div class="d3"></div>
+              <div class="d4"></div>
+            </div>
             <h1>Find Your Next Getaway</h1>
           </div>
           <h2 className="new-section">This Week's Visits</h2>
