@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import BlogView from "./BlogView";
 import Comments from "./Comments";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 function Blog() {
   const { id } = useParams();
   const [responseData, setResponseData] = useState(null);
@@ -69,6 +70,7 @@ function Blog() {
       ) : (
         <></>
       )}
+      <Footer></Footer>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function Article() {
   const [responseData, setResponseData] = useState(null);
@@ -58,6 +59,7 @@ function Article() {
               </Link>
             ))}
           </div>
+          <Footer />
         </>
       ) : (
         <>
