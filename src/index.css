@@ -488,6 +488,10 @@ code {
   .blog-container {
     padding: 0px 20px 20px 20px;
   }
+  .blog-title {
+    font-size: 60px;
+    word-wrap: break-word;
+  }
 }
 
 /* Article view */
@@ -649,14 +653,15 @@ code {
 }
 
 .comment-list-item-content {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
   font-size: 18px;
   font-weight: 300;
 }
 .comment-list-item-date {
   font-weight: 300;
   font-size: 14px;
+  margin: 0;
+  text-align: end;
 }
 
 .comments-container {
@@ -668,12 +673,12 @@ code {
 @media (max-width: 800px) {
   .comments-list {
     padding: 0px;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
     padding-bottom: 50px;
+  }
+  .comment-list-item-content {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 300;
   }
 }
 
