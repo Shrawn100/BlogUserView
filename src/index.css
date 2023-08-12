@@ -450,17 +450,19 @@ code {
 }
 
 .blog-title {
-  padding-top: 80px;
-
+  padding-top: 50px;
+  font-size: 100px;
+  font-family: "Roboto Flex";
   margin: 0;
 }
 .blog-author {
   font-size: 16px;
   font-weight: 400;
+  padding-top: 10px;
 }
 
 .blog-date {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   font-size: 16px;
   margin: 0;
 }
@@ -468,15 +470,15 @@ code {
   width: 100%;
   object-fit: cover;
   max-height: 600px;
-  margin-bottom: 50px;
-  border-radius: 2em;
+  margin-bottom: 20px;
 }
 .blog-paragraph {
   margin-top: 40px;
   padding: 20px 0px 10px 0px;
   margin: 0;
-  line-height: 1.9;
-  font-size: 22px;
+  line-height: 2;
+  font-size: 18px;
+  font-family: "Roboto Flex";
   word-wrap: break-word; /* Add this to allow long words to break */
   overflow-wrap: break-word;
   font-weight: 200;
@@ -508,12 +510,11 @@ code {
   justify-content: space-between;
   text-decoration: none;
   color: black;
-
+  background-color: white;
   width: 100%;
   max-width: 1300px;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
   max-height: 130px;
-  border-radius: 20px;
 }
 .blog-article-container:hover {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
@@ -522,8 +523,6 @@ code {
   object-fit: cover;
   width: 60%;
   max-height: 250px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
 }
 .blog-info {
   padding: 20px;
@@ -538,7 +537,7 @@ code {
   text-decoration: none;
   padding-bottom: 5px;
   text-align: start;
-  font-family: "Acme";
+  font-family: "Roboto Flex";
   width: 100%;
 }
 .blog-info > p {
@@ -611,22 +610,20 @@ code {
   box-sizing: border-box;
   margin-bottom: 5px;
   border: 3px solid rgb(233, 231, 231);
-  border-radius: 1em;
+
   background-color: rgb(252, 252, 252);
 }
 
 .comments-form > button {
-  width: 200px;
+  width: 100px;
   padding: 10px;
   font-size: 18px;
-  background-color: rgb(10, 190, 4);
-  border-radius: 1em;
-  border: 2px solid rgb(10, 190, 4);
+  background-color: rgb(39, 189, 74);
+  border: none;
 }
 .comments-form > button:hover {
   cursor: pointer;
-  background-color: rgb(8, 148, 3);
-  border: 2px solid rgb(8, 148, 3);
+  background-color: rgb(41, 173, 72);
 }
 .comments-h {
   margin-bottom: 0;
