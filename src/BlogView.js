@@ -1,5 +1,5 @@
 import moment from "moment";
-
+import { marked } from "marked";
 function BlogView({ title, desc, date, imgUrl, content, alt, author }) {
   const formattedDate = moment(date).format("MMMM Do, YYYY");
 
@@ -9,11 +9,10 @@ function BlogView({ title, desc, date, imgUrl, content, alt, author }) {
       <h2 className="blog-author">Written by: {author}</h2>
       <p className="blog-date">{formattedDate}</p>
       <img className="blog-image" src={imgUrl} alt={alt} />
-      {content.map((paragraph, index) => (
-        <p className="blog-paragraph" key={index}>
-          {paragraph}
-        </p>
-      ))}
+      <div
+        className="blog-content-container"
+        dangerouslySetInnerHTML={{ __html: marked(content) }}
+      ></div>
     </div>
   );
 }

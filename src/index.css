@@ -472,7 +472,13 @@ code {
   max-height: 600px;
   margin-bottom: 20px;
 }
-.blog-paragraph {
+.blog-content-container {
+  font-family: "Roboto Flex";
+  padding: 20px 0px 10px 0px;
+  word-wrap: break-word; /* Add this to allow long words to break */
+  overflow-wrap: break-word;
+}
+.blog-content-container > p {
   margin-top: 40px;
   padding: 20px 0px 10px 0px;
   margin: 0;

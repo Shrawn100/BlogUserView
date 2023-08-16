@@ -31,7 +31,7 @@ function Blog() {
       setTitle(response.data.blog.title);
       setDesc(response.data.blog.desc);
       setComments(response.data.comments);
-      setContent(response.data.blog.content.split("%!P"));
+      setContent(response.data.blog.content);
       setDate(response.data.blog.date);
       setImgUrl(response.data.blog.image);
       setAlt(response.data.blog.alt);
